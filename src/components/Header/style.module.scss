@@ -1,0 +1,28 @@
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  &_title {
+    font: 600 32px "Montserrat";
+    color: #ffffff;
+  }
+
+  &_navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &_item {
+      a {
+        text-decoration: none;
+        font: 500 18px "Montserrat";
+        color: #ffffff;
+      }
+    }
+  }
+}
