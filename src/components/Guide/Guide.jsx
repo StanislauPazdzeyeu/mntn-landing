@@ -5,9 +5,9 @@ function Guide() {
     <>
       <div className={style['guide-content']}>
         <div className={style['guide-content_wrapper']}>
+          <div className={style['guide-content_wrapper_number']}>01</div>
           <div className={style['guide-content_wrapper_header']}>
-            <div className={style['guide-content_wrapper_header_number']}>01</div>
-            <hr />
+            <div className={style['guide-content_wrapper_header_line']}></div>
             <p className={style['guide-content_wrapper_header_text']}>Get Started</p>
           </div>
           <h1 className={style['guide-content_wrapper_title']}>What level of hiker are you?</h1>
@@ -25,9 +25,9 @@ function Guide() {
 
       <div className={style['guide-content']}>
         <div className={style['guide-content_wrapper']}>
+          <div className={style['guide-content_wrapper_number']}>02</div>
           <div className={style['guide-content_wrapper_header']}>
-            <div className={style['guide-content_wrapper_header_number']}>02</div>
-            <hr />
+            <div className={style['guide-content_wrapper_header_line']}></div>
             <p className={style['guide-content_wrapper_header_text']}>Hiking Essentials</p>
           </div>
           <h1 className={style['guide-content_wrapper_title']}>Picking the right Hiking Gear!</h1>
@@ -44,9 +44,9 @@ function Guide() {
 
       <div className={style['guide-content']}>
         <div className={style['guide-content_wrapper']}>
+          <div className={style['guide-content_wrapper_number']}>03</div>
           <div className={style['guide-content_wrapper_header']}>
-            <div className={style['guide-content_wrapper_header_number']}>03</div>
-            <hr />
+            <div className={style['guide-content_wrapper_header_line']}></div>
             <p className={style['guide-content_wrapper_header_text']}>Where you go is the key</p>
           </div>
           <h1 className={style['guide-content_wrapper_title']}>Understand Your Map & Timing</h1>
