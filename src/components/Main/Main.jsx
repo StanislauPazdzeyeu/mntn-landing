@@ -10,10 +10,10 @@ function Main() {
       </div>
       <div className={style['main-wrapper_information']}>
         <div className={style['main-wrapper_information_guide']}>
-          <hr />
+        <div className={style['main-wrapper_information_guide_line']}></div>
           <p className={style['main-wrapper_information_guide_paragraph']}>A Hiking guide</p>
         </div>
-        <h2 className={style['main-wrapper_information_promise']}>Be prepared for the Mountains and beyond!</h2>
+        <h2 className={style['main-wrapper_information_promise']}>Be Prepared For The Mountains And Beyond!</h2>
         <div className={style['main-wrapper_information_scroll-down']}>
           <span className={style['main-wrapper_information_scroll-down_text']}>scroll down</span>
           <div className={style['main-wrapper_information_scroll-down_arrow']}></div>

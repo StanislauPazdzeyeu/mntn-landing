@@ -3,9 +3,11 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  padding: 1rem 2rem;
 
   &_title {
-    font: 600 32px "Montserrat";
+    font: 600 1.5rem "Montserrat";
+    line-height: 2rem;
     color: #ffffff;
   }
 
@@ -15,12 +17,12 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 2rem;
 
     &_item {
       a {
         text-decoration: none;
-        font: 500 18px "Montserrat";
+        font: 500 1rem "Montserrat";
         color: #ffffff;
       }
     }

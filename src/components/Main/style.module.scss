@@ -1,0 +1,90 @@
+.main-wrapper {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 3.5rem);
+
+    &_contacts {
+        position: absolute;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        left: 2rem;
+        top: 25vh;
+
+        &_follow {
+            color: #ffffff;
+            font: 400 1rem "Montserrat";
+            writing-mode: vertical-lr;
+        }
+
+        &_instagram {
+            background-image: url(../../assets/instagram-icon.svg);     
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 20px;
+            width: 20px;
+        }
+
+        &_twitter {
+            background-image: url(../../assets/twitter-icon.svg);  
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 17px;
+            width: 21px;
+        }
+    }
+
+    &_information {
+        margin: 20vh auto 0;
+        max-width: 950px;
+
+        &_guide {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+
+            &_line {
+                width: 72px;
+                height: 2px;
+                background-color: #fbd784;
+            }
+
+            &_paragraph {
+                text-transform: uppercase;
+                color: #fbd784;
+                font: 700 18px "Roboto";
+                letter-spacing: 6px;
+            }
+        }
+
+        &_promise {
+            font: 600 4rem "Montserrat";
+            color: #ffffff;
+            line-height: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        &_scroll-down {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            &_text {
+                color: #ffffff;
+                font: 400 1rem "Montserrat";
+            }
+
+            &_arrow {
+                background-image: url(../../assets/arrow-downward.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                height: 24px;
+                width: 16px;
+            }
+        }
+    }
+}
