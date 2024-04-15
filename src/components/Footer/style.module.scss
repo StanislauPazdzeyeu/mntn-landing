@@ -19,6 +19,7 @@
         font: 500 0.875rem "Montserrat";
         color: #ffffff;
         line-height: 1.25rem;
+        cursor: pointer;
     }
 }
 
@@ -28,6 +29,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10rem;
+    cursor: default;
 
     &_information-block {
         flex: 1;

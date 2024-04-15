@@ -1,3 +1,19 @@
+@mixin social-network($url, $height, $width, $color) {
+    -webkit-mask: $url no-repeat 50% 50%;
+    mask: $url no-repeat 50% 50%;
+
+    height: $height;
+    width: $width;
+    cursor: pointer;
+    background-color: #ffffff;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+
+    &:hover {
+        background-color: $color;
+    }
+}
+
 .main-wrapper {
     position: relative;
     display: flex;
@@ -15,30 +31,22 @@
             color: #ffffff;
             font: 400 1rem "Montserrat";
             writing-mode: vertical-lr;
+            cursor: default;
         }
 
         &_instagram {
-            background-image: url(../../assets/instagram-icon.svg);     
-            background-size: cover;
-            background-repeat: no-repeat;
-            object-fit: cover;
-            height: 20px;
-            width: 20px;
+            @include social-network(url(../../assets/instagram-icon.svg), 20px, 20px, #cf2972);
         }
 
         &_twitter {
-            background-image: url(../../assets/twitter-icon.svg);  
-            background-size: cover;
-            background-repeat: no-repeat;
-            object-fit: cover;
-            height: 17px;
-            width: 21px;
+            @include social-network(url(../../assets/twitter-icon.svg), 17px, 21px, #1da1f2);
         }
     }
 
     &_information {
         margin: 20vh auto 0;
         max-width: 950px;
+        cursor: default;
 
         &_guide {
             display: flex;
@@ -71,13 +79,16 @@
             display: flex;
             gap: 10px;
             align-items: center;
+            cursor: pointer;
 
             &_text {
                 color: #ffffff;
                 font: 400 1rem "Montserrat";
+                cursor: pointer;
             }
 
             &_arrow {
+                cursor: pointer;
                 background-image: url(../../assets/arrow-downward.svg);
                 background-size: cover;
                 background-repeat: no-repeat;
