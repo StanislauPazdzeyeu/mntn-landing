@@ -1,8 +1,11 @@
 .guide-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     cursor: default;
-    
+    gap: 5rem;
+
     &_wrapper {
         display: flex;
         align-items: center;

@@ -27,12 +27,30 @@
     max-width: 1460px;
     margin: 0 auto 5em auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 10rem;
     cursor: default;
+    flex-wrap: wrap-reverse;
+
+    &-left {
+        display: flex;
+        gap: 10rem;
+        flex: 1 1 auto;
+        justify-content: space-evenly;
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10rem;
+        flex: 1 1 auto;
+    }
 
     &_information-block {
-        flex: 1;
+        min-width: 300px;
+        min-height: 150px;
         display: flex;
         flex-direction: column;
         position: relative;
